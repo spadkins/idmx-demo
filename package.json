@@ -1,0 +1,11 @@
+{
+  "name": "idmx-demo",
+  "version": "1.0.0",
+  "description": "A repo for developers of Internet Dynamics to learn and share code (not for production)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

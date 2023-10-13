@@ -12,11 +12,12 @@ vi package.json
     "start": "node dist/index.js"
   },
 pnpm add -D typescript
-tsc –init
+export PATH=$PATH:node_modules/.bin
+tsc --init
 vi tsconfig.json
     "outDir": "dist",                                   /* Specify an output folder for all emitted files. */
 mkdir src; vi index.ts
-console.log(“Hello world”);
+    console.log(“Hello world”);
 pnpm run dev
 cd ../..   # back to idmx-demo root directory
 git add lc-demo-stephen

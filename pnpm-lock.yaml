@@ -8,6 +8,18 @@ importers:
 
   .: {}
 
+  apps/lc-demo-juan:
+    devDependencies:
+      typescript:
+        specifier: ~5.2.0
+        version: 5.2.2
+
+  apps/lc-demo-stephen:
+    devDependencies:
+      typescript:
+        specifier: ~5.2.0
+        version: 5.2.2
+
   apps/vc-demo-juan:
     dependencies:
       pinia:
@@ -83,12 +95,6 @@ importers:
       vue-tsc:
         specifier: ^1.8.11
         version: 1.8.13(typescript@5.2.2)
-
-  apps/lc-demo-stephen:
-    specifiers:
-      typescript: ~5.2.0
-    devDependencies:
-      typescript: 5.2.2
 
   apps/vc-demo-stephen:
     dependencies:

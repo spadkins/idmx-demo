@@ -13,6 +13,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.17.17",
+    "node-gyp": "^9.4.0",
     "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0",
+    "hnswlib-node": "^2.0.0",
+    "langchain": "^0.0.166",
+    "youtube-transcript": "^1.0.6",
+    "youtubei.js": "^6.4.1"
   }
 }

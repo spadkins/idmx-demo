@@ -30,6 +30,100 @@ importers:
       node-gyp: 9.4.0
       typescript: 5.2.2
 
+  .: {}
+
+  apps/lc-demo-juan:
+    dependencies:
+      langchain:
+        specifier: ^0.0.166
+        version: 0.0.166
+    devDependencies:
+      typescript:
+        specifier: ~5.2.0
+        version: 5.2.2
+
+  apps/lc-demo-stephen:
+    devDependencies:
+      typescript:
+        specifier: ~5.2.0
+        version: 5.2.2
+
+  apps/vc-demo-juan:
+    dependencies:
+      pinia:
+        specifier: ^2.1.6
+        version: 2.1.6(typescript@5.2.2)(vue@3.3.4)
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.2.4
+        version: 4.2.5(vue@3.3.4)
+    devDependencies:
+      '@rushstack/eslint-patch':
+        specifier: ^1.3.3
+        version: 1.4.0
+      '@tsconfig/node18':
+        specifier: ^18.2.2
+        version: 18.2.2
+      '@types/jsdom':
+        specifier: ^21.1.3
+        version: 21.1.3
+      '@types/node':
+        specifier: ^18.17.17
+        version: 18.17.19
+      '@vitejs/plugin-vue':
+        specifier: ^4.3.4
+        version: 4.3.4(vite@4.4.9)(vue@3.3.4)
+      '@vue/eslint-config-prettier':
+        specifier: ^8.0.0
+        version: 8.0.0(eslint@8.50.0)(prettier@3.0.3)
+      '@vue/eslint-config-typescript':
+        specifier: ^12.0.0
+        version: 12.0.0(eslint-plugin-vue@9.17.0)(eslint@8.50.0)(typescript@5.2.2)
+      '@vue/test-utils':
+        specifier: ^2.4.1
+        version: 2.4.1(vue@3.3.4)
+      '@vue/tsconfig':
+        specifier: ^0.4.0
+        version: 0.4.0
+      cypress:
+        specifier: ^13.2.0
+        version: 13.2.0
+      eslint:
+        specifier: ^8.49.0
+        version: 8.50.0
+      eslint-plugin-cypress:
+        specifier: ^2.15.1
+        version: 2.15.1(eslint@8.50.0)
+      eslint-plugin-vue:
+        specifier: ^9.17.0
+        version: 9.17.0(eslint@8.50.0)
+      jsdom:
+        specifier: ^22.1.0
+        version: 22.1.0
+      npm-run-all2:
+        specifier: ^6.0.6
+        version: 6.0.6
+      prettier:
+        specifier: ^3.0.3
+        version: 3.0.3
+      start-server-and-test:
+        specifier: ^2.0.0
+        version: 2.0.1
+      typescript:
+        specifier: ~5.2.0
+        version: 5.2.2
+      vite:
+        specifier: ^4.4.9
+        version: 4.4.9(@types/node@18.17.19)
+      vitest:
+        specifier: ^0.34.4
+        version: 0.34.5(jsdom@22.1.0)
+      vue-tsc:
+        specifier: ^1.8.11
+        version: 1.8.13(typescript@5.2.2)
+
   apps/vc-demo-stephen:
     specifiers:
       '@rushstack/eslint-patch': ^1.3.3

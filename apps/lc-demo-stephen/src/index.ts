@@ -94,6 +94,7 @@ class Main {
 
     const model = new ChatOpenAI({});
     let path = "./data/courses/deepwaters205/LTLAO-01-inspiring-vision.transcript.txt";
+
     const text = fs.readFileSync(path, "utf8");
     const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 4096 });
     const docs = await textSplitter.createDocuments([text]);
@@ -112,7 +113,6 @@ class Main {
 
     // Create a vector store from the documents.
     const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings());
-
     // Initialize a retriever wrapper around the vector store
     const vectorStoreRetriever = vectorStore.asRetriever();
 
@@ -141,38 +141,40 @@ If you don't know the answer, just say that you don't know, don't try to make up
     ]);
 
     let answer = await chain.invoke(
-      "Outline the main sections of this lesson with between 3 and 6 sections, including the timestamp at the beginning. "
+      "Outline the main sections of this lesson with between 3 and 6 sections. " +
+      "For each section include the timestamp at the beginning of the line. "
     );
 
     console.log({ answer });
 
     answer = await chain.invoke(
       "For each of the main sections that you identified, " +
-      "enumerate between 3 and 6 of the most important points in each section, including the timestamp at the beginning of each line. "
+      "enumerate between 3 and 6 of the most important statements of truth in each section. " +
+      "For each important statement, include the timestamp at the beginning of the line. "
     );
 
     console.log({ answer });
 
-    answer = await chain.invoke(
-      "To help the listener of the lesson to test their comprehension, " +
-      "for each of the important points you identified, " +
-      "produce a multiple choice question with 4 answers, where only 1 is correct. " +
-      "The correct answer follow each set of questions."
-    );
+    // answer = await chain.invoke(
+    //   "To help the listener of the lesson to test their comprehension, " +
+    //   "for each of the important points you identified, " +
+    //   "produce a multiple choice question with 4 answers, where only 1 is correct. " +
+    //   "The correct answer follow each set of questions."
+    // );
 
-    console.log({ answer });
+    // console.log({ answer });
 
-    answer = await chain.invoke(
-      "Produce an additional question for the self-test for each Bible verse reference you identified."
-    );
+    // answer = await chain.invoke(
+    //   "Produce an additional question for the self-test for each Bible verse reference you identified."
+    // );
 
-    console.log({ answer });
+    // console.log({ answer });
 
-    answer = await chain.invoke(
-      "Produce a multiple choice self-test quiz so that someone who listens to the lesson can test their comprehension. Each multiple choice question should have 4 answers, where only 1 is correct. Produce a question for each verse reference and a question for each point you identified."
-    );
+    // answer = await chain.invoke(
+    //   "Produce a multiple choice self-test quiz so that someone who listens to the lesson can test their comprehension. Each multiple choice question should have 4 answers, where only 1 is correct. Produce a question for each verse reference and a question for each point you identified."
+    // );
 
-    console.log({ answer });
+    // console.log({ answer });
   }
 }
 

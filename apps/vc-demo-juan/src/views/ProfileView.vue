@@ -1,12 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is the About page</h1>
+  <div class="profile">
+    <h1>This is the User Profile page</h1>
   </div>
 </template>
 
 <style>
 @media (min-width: 1024px) {
-  .about {
+  .profile {
     min-height: 100vh;
     display: flex;
     align-items: center;

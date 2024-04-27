@@ -7,5 +7,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "youtube-transcript": "workspace:^1.2.0"
+  }
 }

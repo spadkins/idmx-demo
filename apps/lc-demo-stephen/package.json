@@ -23,7 +23,7 @@
     "dotenv-expand": "^10.0.0",
     "hnswlib-node": "^2.0.0",
     "langchain": "^0.0.166",
-    "youtube-transcript": "^1.0.6",
+    "readline-sync": "^1.4.10",
     "youtubei.js": "^6.4.1"
   }
 }
